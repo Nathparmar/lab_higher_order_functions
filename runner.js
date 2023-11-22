@@ -6,4 +6,6 @@ scranAdvisor = new ScranAdvisor(restaurants);
 
 // console.log(scranAdvisor.findRestaurantByName("Happy Lamb Hot Pot"));
 
-console.log(scranAdvisor.findAllRestaurants());
+// console.log(scranAdvisor.findAllRestaurants());
+
+console.log(scranAdvisor.findRestaurantsByLocation("Glasgow"));

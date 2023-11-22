@@ -32,13 +32,14 @@ ScranAdvisor.prototype.findAllRestaurants = function(){
 
 }
 
-ScranAdvisor.prototype.findRestaurantsByLocation = function(){
+ScranAdvisor.prototype.findRestaurantsByLocation = function(town){
 
-    const location = this.restaurants.filter((restaurant) => {
+    const restaurants = this.restaurants.filter((restaurant) => {
 
-        return restaurant.location.town;
+        return restaurant.location.town === town;
     });
     
+    return restaurants;
 
     // const evenNumbers = numbers.filter((number) => {
     //     return number % 2 === 0;
