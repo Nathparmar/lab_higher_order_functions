@@ -19,6 +19,8 @@ ScranAdvisor.prototype.findRestaurantByName = function(name){
         }
     }
 
+    
+
     // this.restaurants.find(restaurant => restaurant.name === name);
 };
 
@@ -41,11 +43,27 @@ ScranAdvisor.prototype.findRestaurantsByLocation = function(town){
     
     return restaurants;
 
-    // const evenNumbers = numbers.filter((number) => {
-    //     return number % 2 === 0;
-    // });
-    
 }
 
-module.exports = ScranAdvisor;
+ScranAdvisor.prototype.findMostCommonCuisine = function(){
+   
+    
+    
+    
+    
+    
+    const cuisines = this.restaurants.forEach((restaurant) => {
+        return restaurant.cuisine;
+    });
+
+    return cuisines;
+
+    // numbers.forEach((element) => {console.log(element);});
+}
+
+ScranAdvisor.prototype.searchByName = function(name){
+
+}
+
+module.exports = ScranAdvisor; 
 

@@ -8,4 +8,6 @@ scranAdvisor = new ScranAdvisor(restaurants);
 
 // console.log(scranAdvisor.findAllRestaurants());
 
-console.log(scranAdvisor.findRestaurantsByLocation("Glasgow"));
+// console.log(scranAdvisor.findRestaurantsByLocation("Glasgow"));
+
+console.log(scranAdvisor.findMostCommonCuisine());
